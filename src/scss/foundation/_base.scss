@@ -1,0 +1,72 @@
+/* Base
+   ----------------------------------------------------------------- */
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: $color-black;
+  text-align: left;
+  background: $color-white;
+}
+
+img {
+  vertical-align: bottom;
+  width: 100%;
+  height: auto;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+a {
+  color: $color-black;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+ul {
+  list-style: none;
+}
+
+a:hover {
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.legacy-ie {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  width: 100%;
+  padding: 100px 0;
+  text-align: center;
+  background: #eee;
+}
+
+.legacy-ie a {
+  text-decoration: none;
+}
+
+.noscript {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  width: 100%;
+  padding: 100px 0;
+  text-align: center;
+}

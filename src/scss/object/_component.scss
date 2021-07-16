@@ -1,0 +1,155 @@
+.m-en {
+  font-family: 'Tinos', serif;
+}
+.m-en--italic {
+  font-style: italic;
+}
+
+.m-serif {
+  font-family: $font-serif;
+}
+
+.m-sectitle {
+  text-align: center;
+  .m-en {
+    font-size: 32px;
+    line-height: 1.0;
+    margin-bottom: 8px;
+    @include media-up(md) {
+      font-size: 72px;
+      margin-bottom: 12px;
+    }
+  }
+  .ja {
+    font-size: 24px;
+    color: $color-main;
+    line-height: 1.4;
+    font-weight: normal;
+    @include media-up(xs) {
+      br {
+        display: none;
+      }
+    }
+    @include media-up(md) {
+      font-size: 36px;
+    }
+  }
+}
+
+.m-sectitle--small {
+  text-align: center;
+  .m-en {
+    font-size: 42px;
+    line-height: 1.0;
+    margin-bottom: 12px;
+    color: $color-beige;
+    @include media-up(md) {
+      font-size: 72px;
+    }
+  }
+  .ja {
+    font-size: 20px;
+    line-height: 1.4;
+    color: $color-main;
+    font-weight: normal;
+    @include media-up(xs) {
+      br {
+        display: none;
+      }
+    }
+    @include media-up(md) {
+      font-size: 26px;
+    }
+  }
+}
+
+.section_description {
+  max-width: 1200px !important;
+}
+
+.service_contact_message {
+  background: #e4dfd4;
+  p {
+    color: #694e08;
+  }
+}
+.service_contact_message * {
+  color: #694e08;
+}
+
+.faq_question {
+  background: #c99b2f;
+  text-align: left;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0 20px;
+  font-size: 18px;
+  .xl {
+    display: none;
+  }
+  @include media-up(sm) {
+    font-size: 20px;
+  }
+  @include media-up(md) {
+    padding: 0 28px;
+  }
+  @include media-up(xl) {
+    font-size: 24px;
+    padding: 0 0 0 50px;
+    .xl {
+      display: inline;
+    }
+  }
+  &:before {
+    color: #ab8939;
+    right: auto;
+    left: 20px;
+    font-family: 'Tinos', serif;
+    font-weight: normal;
+    font-style: italic;
+  }
+}
+.faq_answer {
+  background: $color-beige;
+  color: #694e08;
+  @include media-up(md) {
+    padding: 32px 26px;
+  }
+  &:before {
+    right: auto;
+    left: 16px;
+    font-family: 'Tinos', serif;
+    font-weight: normal;
+    font-style: italic;
+  }
+}
+.service_faq_list {
+  max-width: 1080px;
+  .small {
+    font-size: 16px;
+    color: $color-white;
+    @include media-up(xl) {
+      font-size: 20px;
+    }
+  }
+}
+
+.highlight {
+  font-weight: bold;
+  color: #694e08;
+}
+.animaited {
+  background-position: -100% 12px;
+}
+
+section {
+  margin-top: 24px;
+  @include media-up(md) {
+    margin-top: 76px;
+  }
+}

@@ -1,0 +1,3 @@
+src/scss/foundation/_ress.scss
+public/**/*
+dist/**/*
